@@ -7,3 +7,5 @@ LOCATION=$(realpath "$0")
 DIR=$(dirname "$LOCATION")
 
 curl -sfL https://get.k3s.io | sh -s - server --cluster-init
+
+sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
